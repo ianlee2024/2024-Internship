@@ -24,8 +24,7 @@ body
 label 
 {
     font-family: Monospace;
-    display: block;
-    margin-bottom: 8px;
+    margin-top: auto;
 }
 
 input[type="number"], button 
@@ -70,5 +69,9 @@ button:hover
     border: 1px solid #ccc;
     border-radius:3px;
     box-sizing:border-box;
+    font-family:monospace;
 
+}
+h {
+    font-size: 100px;
 }

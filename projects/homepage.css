@@ -3,6 +3,9 @@ body
     font-family: Monospace;
     margin: 0;
     padding: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 .container 
@@ -24,8 +27,7 @@ body
 label 
 {
     font-family: Monospace;
-    display: block;
-    margin-bottom: 8px;
+    font-size:100px;
 }
 
 input[type="number"], button 
@@ -65,10 +67,13 @@ button:hover
     justify-content: center;
     align-items: center;
     width:100%;
-    padding: 20px;
-    margin-bottom:16px;
-    border: 1px solid #ccc;
-    border-radius:3px;
-    box-sizing:border-box;
+    padding: 255px;
+    margin-bottom:10px;
+    border: 20px solid #ccc;
+    border-radius:0px;
+    box-sizing:content-box;
+    font-family:monospace;
+    overflow: scroll;
+    display: inline;
 
 }

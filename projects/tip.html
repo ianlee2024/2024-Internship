@@ -1,23 +1,35 @@
-
+<html>
+  <body>
+    <strong>
+    <div class="center-both">
+      <p id="currentTime"></p>
+      <script src="tip.js"></script>
+    </strong>
+    </div>
+  </body>
+</html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="tip.css">
 </head>
 
 <body>
     <element class="center-both"></element>
     <div class="container">
+        <a href="homepage.html">
+            <button type="button">Home</button>
+        </a>
         <h1>Tip Calculator</h1>
         <div class="calculator">
             <!-- Establishing text for user input, number with increments of 0.01-->
-            <label for="billAmount">Total Bill ($):</label>
+            <label for="billAmount"><strong>Total Bill($):</strong></label>
             <input type="number" id="billAmount" min="0" step="0.01">
             <div>
                 <!--Making the text for slider, labeled as "tipPercentage"-->
-                <label for="tipPercentage">Tip Percentage (%):</label>
+                <label for="tipPercentage"><strong>Tip Percentage (%):</strong></label>
             </div>
         </div>
     </div>
@@ -44,20 +56,12 @@
         </script>
     </div>
 <h2>Results</h2>
-    <!--Makes the text and button for tipAmount-->
-    <div class="calculator">
-        <label for="tipAmount">Tip Amount($)</label>
-        <button onclick= "Add()">Calculate</button>
-        <div>
-            <p>Result: <span id="tipresult"></span></p>
-        </div>
-    </div>
     <div>
         <!--Makes the text and button for totalBillAmount-->
         <div class="calculator">
-            <label for="totalAmount">Total Amount($):</label>
-            <button onclick="addNumbers()">Calculate</button>
-            <p>Result: <span id="result"></span></p>
+            <label for="totalAmount"><strong>Total Bill Amount:</strong></label>
+            <button onclick="addNumbers()"><strong>Calculate</strong></button>
+            <p<strong>Result:</strong> <span id="result"></span></p>
             <script>
                 function addNumbers() 
                 {
