@@ -1,0 +1,86 @@
+img{
+    margin-top:-50px;
+    margin-left:20px;
+}
+body {
+    background-color:white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    color: black;
+    background-color: white;
+    padding: 20px;
+    text-align: flex;
+    width: 30%;
+    font-size:20px;
+}
+
+.top-buttons {
+    font-family:georgia;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    margin-top: -100px;
+}
+
+.button button {
+    font-size:15px;
+    font-family:georgia;
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 25px 30px; /* Adjusted padding for a better button size */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition on hover */
+    cursor:pointer;
+}
+.header-button {
+    background-color: white;
+    padding: 10px 20px;
+}
+/* Add this to prevent visited links from changing color */
+.header-button:visited {
+    color: black;
+}
+
+/* Add this to prevent active links from changing color */
+.header-button:active {
+    color: black;
+    background-color: white;
+}
+.bubble{
+    font-size:15px;
+    padding:7.1px 100px;
+    color:black;
+    width: fit-content;
+    position: absolute; /* Set position to absolute */
+    top: -9.5px; 
+    right: 815px; 
+    font-family:georgia;
+}
+
+.text-bubbles-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bubble {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+
+
+
+
