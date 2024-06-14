@@ -27,7 +27,6 @@ function calculateTip(percentage) {
     for (let i = 0; i < 20; i++) {
         createDollarSign();
     }
-    
 }
 
 function toggleCustomInput() {
@@ -47,14 +46,24 @@ function calculateCustomTip() {
     }
     calculateTip(customTip);
 }
+
+let leftSide = true; // boolean flag to alternate sides
+
 function createDollarSign() {
     const container = document.getElementById('floating-container');
     const dollarSign = document.createElement('span');
     dollarSign.textContent = '$';
     dollarSign.className = 'dollar-sign';
 
-    // Randomize the horizontal and vertical position within the container
-    const xPos = Math.random() * window.innerWidth;
+    // Alternate between left and right side of the screen
+    let xPos;
+    if (leftSide) {
+        xPos = Math.random() * (window.innerWidth / 2); // Left half
+    } else {
+        xPos = Math.random() * (window.innerWidth / 2) + (window.innerWidth / 2); // Right half
+    }
+    leftSide = !leftSide; // Toggle the side for the next dollar sign
+
     dollarSign.style.left = xPos + 'px';
     dollarSign.style.bottom = '0px'; // Start from the bottom of the screen
 
@@ -65,3 +74,4 @@ function createDollarSign() {
         dollarSign.remove();
     });
 }
+
